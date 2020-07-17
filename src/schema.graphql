@@ -1,0 +1,7 @@
+type Query {
+    helloQuery(input: HelloQueryInput!): String
+}
+
+input HelloQueryInput {
+    value: Int! @constraint(min: 0, max: 20)
+}
